@@ -49,6 +49,19 @@ public:
         }
         cout << "Max value in list : " << max << endl;
     }
+    
+    void disconnection(){
+        curr = head;
+        while (curr->next->next != NULL)
+        {
+            curr = curr->next;
+        }
+        node *temp = curr->next;
+        curr->next = NULL;
+        temp->next = head;
+        head = temp;
+    }
+
     void display(){
         curr = head;
         while (curr)
@@ -76,6 +89,8 @@ int main()
     l1.insert_at_end(50);
     l1.display();
     l1.maximum();
+    l1.disconnection();
+    l1.display();
 
     return 0;
 }

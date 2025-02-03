@@ -39,9 +39,10 @@ public:
         curr = head;
         while (curr)
         {
-            cout << curr->data << " ";
+            cout << curr->data << " -> ";
             curr = curr->next;
         }
+        cout << "NULL";
         cout << endl;
     }
 };
