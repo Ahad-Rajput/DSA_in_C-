@@ -71,6 +71,9 @@ int main()
 	l1.insert_at_end(21);
 	l1.insert_at_end(72);
 	l1.insert_at_end(90);
+	l1.insert_at_end(39);
+	l1.insert_at_end(10);
+	l1.insert_at_end(6);
 	l1.display();
     l1.every_third_node();
     l1.display();
