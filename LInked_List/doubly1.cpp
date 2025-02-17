@@ -19,17 +19,21 @@ public:
         node* new_node = new node;
         new_node->data = data;
         new_node->next = NULL;
+        new_node->prev = NULL;
         // If there is no node
         if (head == NULL)
         {
-            new_node->prev = NULL;
             head = new_node;
             tail = new_node;
             return;
         }
-        tail->next = new_node;
-        new_node->prev = tail;
-        tail = new_node;
+        else
+        {
+            tail->next = new_node;
+            new_node->prev = tail;
+            tail = new_node;
+        }
+        
     }
     void display(){
         cout << "Forward:" << endl;
