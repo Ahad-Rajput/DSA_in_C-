@@ -43,7 +43,6 @@ public:
         else
         {
             return false;
-            
         }
         
     }
@@ -51,12 +50,8 @@ public:
 
 int main()
 {
-    bool var;
     stack s1;
-    
-    s1.isEmpty();
-    var = s1.isEmpty();
-    cout << var << endl;
+    cout << "Is Stack Empty: " << (s1.isEmpty()?"yes":"no") << endl;
     s1.push(9);
     s1.push(50);
     s1.pop();
@@ -70,7 +65,7 @@ int main()
     s1.display();
     s1.peek();
 
-    cout << var << endl;
+
     cout << "Everything is fine!" << endl;
     return 0;
 }
