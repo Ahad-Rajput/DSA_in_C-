@@ -3,53 +3,83 @@ using namespace std;
 
 class stack{
 public:
-    int *arr;
-    int size;
-    int top;
-    stack(int size){  // Constructor
-        this->size = size;
-        arr = new int[size];
-        top = -1;
-    }
-    ~stack(){  // Destructor
-        delete[] arr;
-    }
+    int arr[10];
+    int top = -1;
     void push(int data){
-        if (top >= size-1)
+        if (top>=9)
         {
-            cout << "Full" << endl;
+            cout << "Stack is full!\n";
         }
-        top++;
-        arr[top] = data;
+        else{
+            top++;
+            arr[top] = data;
+        }
     }
     void pop(){
-        if (top < 0)
+        if (top == -1)
         {
-            cout << "Stack is Empty!" << endl;
+            cout << "Stack is empty!\n";
         }
-        top--;
-        
+        else{
+            top--;
+        }
     }
     void display(){
-        if(top < 0){
-            cout << "Stack is Empty!" << endl;
+        for (int i = top; i >= 0; i--)
+        {
+            cout << arr[i] << endl;
         }
-        for (int i = 0; i <= top; i++) {
-            cout << arr[i] << " ";
+        cout << "---------------\n";
+    }
+    void peek(){
+        if (top == -1)
+        {
+            cout << "Stack is empty!\n";
         }
-        cout << "\n";
+        else{
+            cout << "Peek value : " << arr[top] << endl;
+            cout << "---------------\n";
+        }
+    }
+    bool isEmpty(){
+        if(top == -1){
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    bool isFull(){
+        if(top>=9){
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 };
 
 int main()
 {
-    stack s(5);
-    s.push(6);
-    s.push(5);
-    s.push(4);
+    stack s;
+    cout << "Is Stack empty: "<<(s.isEmpty()?"yes":"no") << endl;
+    s.push(56);
+    s.push(21);
     s.push(3);
+    s.push(43);
     s.push(2);
+    s.push(1);
+    s.push(7);
+    s.push(90);
     s.pop();
+    s.push(44);
+    s.push(99);
+    s.push(18);
     s.display();
+    cout << "Is Stack full: "<<(s.isFull()?"yes":"no") << endl;
+    cout << "Is Stack empty: "<<(s.isEmpty()?"yes":"no") << endl;
+    cout << "Everything is fine!" << endl;
     return 0;
 }
