@@ -18,6 +18,17 @@ class Linked_list{
             new_node->next = head;
             head = new_node;
         }
+        void display(){
+            node* temp = head;
+            cout << "[ ";
+            while (temp != NULL)
+            {
+                cout << temp->data << " ";
+                temp = temp->next;
+            }
+            cout << "]";
+            cout << endl;
+        }
         void length(){
             int count = 0;
             node* curr = head;
@@ -36,6 +47,7 @@ int main()
     l1.insert_at_start(10);
     l1.insert_at_start(20);
     l1.insert_at_start(30);
+    l1.display();
     l1.length();
     cout << "Everything is fine!\n";
     return 0;
