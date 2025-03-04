@@ -7,29 +7,34 @@ class node{
 };
 class circular_list{
     public:
-        node* head = new node;
+        node* head;
+        node* tail;
         circular_list(){
             head = NULL;
+            tail = NULL;
         }
         void insert(int data){
             node* new_node = new node;
-            node* tail = head;
             new_node->data = data;
-            new_node->next = tail;
-            head = new_node;
+            new_node->next = NULL;
             if (head == NULL)
             {
-                tail = new_node;
-                new_node->next = NULL;
+                head = tail = new_node;
+                tail->next = head;
             }            
+            else{
+                tail->next = new_node;
+                tail = new_node;
+                tail->next = head;
+            }
         }
         void display(){
             node* curr = head;
-            while (curr->next != head)
-            {
+            do {
                 cout << curr->data << " ";
                 curr = curr->next;
-            }
+            } while (curr != head);
+            
             cout << endl;
         }
 };
