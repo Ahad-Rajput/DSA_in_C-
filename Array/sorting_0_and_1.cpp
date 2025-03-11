@@ -19,7 +19,7 @@ void sorting(int arr[], int size){
             left++;
             right--;
         }
-    }
+    }       
 }
 
 // Printing an Array..
