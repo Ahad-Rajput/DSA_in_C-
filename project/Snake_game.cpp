@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool gameOver;
+bool gameOver; // Global variable
 
 const int width = 20;
 const int height = 20;
