@@ -55,7 +55,7 @@ struct linked_list{
         else
         {
             node* curr = head;
-            while (curr->data != key)
+            while (curr->next != NULL && curr->data != key)
             {
                 curr = curr->next;
             }
@@ -82,7 +82,7 @@ struct linked_list{
     void delete_in_the_middle(int key){
         node* temp = head;
         node* curr = head;
-        while(curr->data != key){
+        while(curr->next != NULL && curr->data != key){
             curr = curr->next;
         }
         temp = curr;
