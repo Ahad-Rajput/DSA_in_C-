@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 using namespace std;
 
 void drawBorder(char *spaces);
@@ -7,9 +8,35 @@ void player2Move(char *spaces, char p2);
 int chkWinner(char *spaces, char p1, char p2);
 bool checkTie(char *spaces);
 
+void loadingView(){
+    char x = 219;
+
+    cout << endl;
+    cout << "\n\n\n\n\n\n\n\t\t\t\tWelcome to Tic_Tac_Toe Game!";
+    cout << "\n\n\t\t\t\tLoading.......";
+    cout << "\n\n\r\t\t\t\t" << x << x << x << "15%";
+    Sleep(700);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << "25%";
+    Sleep(550);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << "40%";
+    Sleep(450);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << "51%";
+    Sleep(400);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << x << x << "65%";
+    Sleep(350);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << x << x << x << x << "83%";
+    Sleep(300);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << x << x << x << x << x << x << "95%";
+    Sleep(250);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << x << x << x << x << x << x << x << x << "100%";
+    Sleep(150);
+    cout << endl;
+}
 
 int main()
 {
+    loadingView();
+    system("cls");
     char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
     char player1 = 'X';
     char player2 = 'O';
@@ -98,25 +125,25 @@ int chkWinner(char *spaces, char p1, char p2){
         return (spaces[0] == p1)? 1 : 2;
     }
     else if((spaces[3] != ' ') && (spaces[3] == spaces[4]) && (spaces[4] == spaces[5])){
-        return (spaces[0] == p1)? 1 : 2;
+        return (spaces[3] == p1)? 1 : 2;
     }
     else if((spaces[6] != ' ') && (spaces[6] == spaces[7]) && (spaces[7] == spaces[8])){
-        return (spaces[0] == p1)? 1 : 2;
+        return (spaces[6] == p1)? 1 : 2;
     }
     else if((spaces[0] != ' ') && (spaces[0] == spaces[3]) && (spaces[3] == spaces[6])){
         return (spaces[0] == p1)? 1 : 2;
     }
     else if((spaces[1] != ' ') && (spaces[1] == spaces[4]) && (spaces[4] == spaces[7])){
-        return (spaces[0] == p1)? 1 : 2;
+        return (spaces[1] == p1)? 1 : 2;
     }
     else if((spaces[2] != ' ') && (spaces[2] == spaces[5]) && (spaces[5] == spaces[8])){
-        return (spaces[0] == p1)? 1 : 2;
+        return (spaces[2] == p1)? 1 : 2;
     }
     else if((spaces[0] != ' ') && (spaces[0] == spaces[4]) && (spaces[4] == spaces[8])){
         return (spaces[0] == p1)? 1 : 2;
     }
     else if((spaces[2] != ' ') && (spaces[2] == spaces[4]) && (spaces[4] == spaces[6])){
-        return (spaces[0] == p1)? 1 : 2;
+        return (spaces[2] == p1)? 1 : 2;
     }
     else{
         return false;
