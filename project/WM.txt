@@ -1,0 +1,4 @@
+Align: Position
+Artless: straightforward
+Slice: Cut
+Definite: Certain
