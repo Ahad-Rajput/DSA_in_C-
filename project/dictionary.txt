@@ -1,0 +1,5 @@
+Apple: A red or green fruit
+Ball: A round object used in games
+Cat: A small domesticated carnivorous mammal
+Dog: A loyal animal often kept as a pet
+Elephant: A large mammal with a trunk
