@@ -1,0 +1,292 @@
+Practice_01:
+
+
+
+#include <iostream>
+using namespace std;
+
+struct node{
+    int data;
+    node* next;
+};
+struct queue{
+    node* front = new node;
+    node* rear = new node;
+    queue(){
+        front = NULL;
+        rear = NULL;
+    }
+    void enque(int data){
+        node* new_node = new node;
+        new_node->data = data;
+        new_node->next = NULL;
+        if(front == NULL){
+            front = rear = new_node;
+        }
+        else
+        {
+            rear->next = new_node;
+            rear = new_node;
+        }
+        
+    }
+    void display(){
+        node* curr = front;
+        while (curr != NULL)
+        {
+            cout << curr->data << " ";
+            curr = curr->next;
+        }
+        cout << endl;
+    }
+
+};
+
+int main()
+{
+    queue q;
+    q.enque(9);
+    q.enque(2);
+    q.enque(5);
+    q.enque(1);
+    q.display();
+    cout << "Everything is fine!\n";
+    return 0;
+}
+
+
+
+Practice_02:
+
+
+#include <iostream>
+using namespace std;
+
+struct node{
+    int data;
+    node* next;
+};
+
+class queue{
+    public:
+        node* front = new node;
+        node* rear = new node;
+        queue(){
+            front = NULL;
+            rear = NULL;
+        }
+        void enque(int data){
+            node* new_node = new node;
+            new_node->data = data;
+            new_node->next = NULL;
+            if(front == NULL){
+                front = rear = new_node;
+            }
+            else
+            {
+                rear->next = new_node;
+                rear = new_node;
+            }
+        }
+        void deque(){
+            node* temp = front;
+            front = front->next;
+            temp->next = NULL;
+            delete temp;
+        }
+        void display(){
+            node* curr = front;
+            while (curr != NULL)
+            {
+                cout << curr->data << " ";
+                curr = curr->next;
+            }
+            cout << endl;
+        }
+        void peek(){
+            if(front == NULL){
+                cout << "Queue is Empty!\n";
+            }
+            else{
+                cout << "Peek value : " << front->data << endl;
+            }
+        }
+        bool isEmpty(){
+            if(front == NULL){
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+};
+
+int main()
+{
+    queue q;
+    q.enque(2);
+    q.enque(27);
+    q.enque(4);
+    q.enque(9);
+    q.display();
+    q.deque();
+    q.display();
+    q.peek();
+    cout << "Is Queue Empty : " << (q.isEmpty()? "yes" : "no") << endl;
+    cout << "Everything is fine!\n";
+    return 0;
+}
+
+
+
+Priority_Queue:
+
+
+
+#include <iostream>
+using namespace std;
+
+struct node{
+    int data;
+    node* next;
+    char priority;
+};
+
+class queue{
+    public:
+        node* front = new node;
+        node* rear = new node;
+        queue(){
+            front = NULL;
+            rear = NULL;
+        }
+        void enque(int data, char p){
+            node* new_node = new node;
+            new_node->data = data;
+            new_node->next = NULL;
+            new_node->priority = p;
+            if(front == NULL){
+                front = rear = new_node;
+            }
+            else if (new_node->priority == 'H')
+            {
+                new_node->next = front;
+                front = new_node;
+            }
+            else
+            {
+                rear->next = new_node;
+                rear = new_node;
+            }
+            
+        }
+        void display(){
+            node* curr = front;
+            while (curr != NULL)
+            {
+                cout << curr->data << " ";
+                curr = curr->next;
+            }
+            cout << endl;
+        }
+        void deque(){
+            node* temp = front;
+            front = front->next;
+            temp->next = NULL;
+            delete temp;
+        }
+};
+
+int main(){
+    queue q;
+    q.enque(6, 'L');
+    q.enque(5, 'L');
+    q.enque(4, 'H');
+    q.enque(3, 'L');
+    q.enque(2, 'H');
+    q.display();
+    q.deque();
+    q.display();
+    cout << "Everything is fine!\n";
+    return 0;
+}
+
+
+
+Queue with Array:
+
+
+#include <iostream>
+using namespace std;
+
+class queue{
+    public:
+        int arr[10];
+        int front = -1;
+        int rear = -1;
+        void enque(int data){
+            if(rear >= 9){
+                cout << "Queue is full!\n";
+            }
+            else if(front == -1){
+                front++;
+                arr[front] = data;
+                rear = front;
+            }
+            else{
+                rear++;
+                arr[rear] = data;
+            }
+        }
+        void deque(){
+            if(front == -1){
+                cout << "Queue is Empty!\n";
+            }
+            else
+            {
+                front++;
+            }
+        }
+        void display(){
+            for (int i = front; i <= rear; i++)
+            {
+                cout << arr[i] << " ";
+            }
+            cout << endl;
+        }
+        bool isEmpty(){
+            if(front == -1){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        bool isFull(){
+            if (rear >= 9)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+};
+
+int main()
+{
+    queue q;
+    q.enque(5);
+    q.enque(9);
+    q.enque(0);
+    q.enque(3);
+    q.display();
+    q.deque();
+    q.display();
+    cout << "Everything is fine!\n";
+    return 0;
+}
+

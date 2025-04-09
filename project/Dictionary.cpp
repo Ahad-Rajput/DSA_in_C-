@@ -45,10 +45,7 @@ public:
         root = NULL;
     }
 
-    void insert(string w, string m) {
-        root = insertH(root, w, m);
-    }
-
+    
     // Helper function for insert
     node* insertH(node* root, string w, string m) {
         if (root == NULL) {
@@ -67,8 +64,12 @@ public:
             // Word already exists, update the meaning
             root->meaning = m;
         }
-
+        
         return root;
+    }
+
+    void insert(string w, string m) {
+        root = insertH(root, w, m);
     }
 
     // Convert a string to lowercase for case-insensitive comparison
@@ -77,17 +78,7 @@ public:
         return str;
     }
 
-    // Search for a word in the BST (case-insensitive)
-    void search(string word) {
-        word = toLowerCase(word);  // Convert input word to lowercase
-        node* result = searchH(root, word);
-        if (result) {
-            cout << "\t\t\t\tMeaning of '" << word << "': " << result->meaning << endl;
-        } else {
-            cout << "\t\t\t\tWord not found in dictionary.\n";
-        }
-    }
-
+    
     // Helper function for search
     node* searchH(node* root, string word) {
         if (root == NULL) {
@@ -100,6 +91,17 @@ public:
             return searchH(root->left, word);
         } else {
             return searchH(root->right, word);
+        }
+    }
+    
+    // Search for a word in the BST (case-insensitive)
+    void search(string word) {
+        word = toLowerCase(word);  // Convert input word to lowercase
+        node* result = searchH(root, word);
+        if (result) {
+            cout << "\t\t\t\tMeaning of '" << word << "': " << result->meaning << endl;
+        } else {
+            cout << "\t\t\t\tWord not found in dictionary.\n";
         }
     }
 };
