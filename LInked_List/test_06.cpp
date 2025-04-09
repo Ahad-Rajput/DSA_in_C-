@@ -38,6 +38,27 @@ class linked_list{
             cout << "NULL";
             cout << endl;
         }
+        void removing_duplicates(){
+            node* current = head ;
+            while (current != NULL)
+            {
+                node* runner = current;
+                while (runner->next != NULL)
+                {
+                    if (runner->next->data == current->data)
+                    {
+                        node* temp = runner->next;
+                        runner->next = runner->next->next;
+                        temp->next = NULL;
+                        delete temp;
+                    }
+                    else{
+                        runner = runner->next;
+                    }
+                }
+                current = current->next;
+            }  
+        }
        
 };
 
@@ -53,10 +74,9 @@ int main()
 
     l1.display();
 
-    node* curr1 = l1.head;
-    node* curr2 = l2.head;
-
+    l1.removing_duplicates();
     
+    l1.display(); 
 
     cout << "Everything is fine!\n";
     return 0;

@@ -38,6 +38,28 @@ class linked_list{
             cout << "NULL";
             cout << endl;
         }
+        void bubble_sort(){
+            bool swapped;
+            node* curr;
+            node* prev = NULL;
+            do
+            {
+                swapped = false;
+                curr = head;
+                while (curr->next != NULL)
+                {
+                    if (curr->data > curr->next->data)
+                    {
+                        int temp = curr->data;
+                        curr->data = curr->next->data;
+                        curr->next->data = temp;
+                        swapped = true;
+                    }
+                    curr = curr->next;
+                }
+                
+            } while (swapped);  
+        }
 };
 
 int main()
@@ -71,6 +93,10 @@ int main()
         curr2 = curr2->next;
     }
     
+    l3.display();
+
+    l3.bubble_sort();
+
     l3.display();
 
     cout << "Everything is fine!\n";
