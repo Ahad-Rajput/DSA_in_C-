@@ -16,11 +16,11 @@ void loadingView(){
     cout << "\r\t\t\t\t" << x << x << x << x << x << "25%";
     Sleep(600);
     cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << "40%";
-    Sleep(550);
-    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << "51%";
     Sleep(500);
+    cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << "51%";
+    Sleep(400);
     cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << x << x << "65%";
-    Sleep(450);
+    Sleep(350);
     cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << x << x << x << x << "83%";
     Sleep(300);
     cout << "\r\t\t\t\t" << x << x << x << x << x << x << x << x << x << x << x << x << x << x << x << "95%";

@@ -1,4 +1,61 @@
-Align: Position
-Artless: straightforward
-Slice: Cut
-Definite: Certain
+Abandon: To leave behind or give up completely
+Ability: The power or skill to do something
+Absorb: To take in or soak up
+Accept: To receive or agree to something offered
+Access: A means of entering or approaching
+Accurate: Free from error; correct
+Achieve: To successfully reach a goal or result
+Active: Engaging or ready to engage in physical or energetic pursuits.
+Adapt: To adjust to new conditions
+Admire: To regard with respect or warm approval
+Adventure: An unusual and exciting experience
+Aggressive: Ready to attack or confront
+Align: To arrange in a straight line or correct relative positions
+Amazing: Causing great surprise or wonder
+Ambition: A strong desire to achieve something
+Analyze: Examine methodically for understanding
+Ancient: Belonging to the distant past
+Anger: A strong feeling of annoyance or hostility
+Approach: Come near or nearer to something
+Artless: Straightforward and without deception
+Balance: An even distribution of weight enabling someone or something to remain upright
+Beautiful: Pleasing to the senses or mind
+Benefit: An advantage or profit gained
+Bloom: To produce flowers
+Bold: Showing willingness to take risks
+Brave: Showing courage and facing danger
+Calculate: To determine something mathematically
+Careful: Making sure of avoiding potential danger or harm
+Create: To bring something into existence
+Curious: Eager to know or learn something
+Damage: Physical harm caused to something
+Definite: Certain and clearly defined
+Dream: A series of thoughts, images, or emotions during sleep
+Eager: Strongly wanting to do or have something
+Easy: Achieved without great effort
+Fabric: Material typically produced by weaving or knitting
+Famous: Known by many people
+Fast: Moving at high speed
+Gather: To collect things together
+Gift: A thing given willingly to someone without payment
+Habit: A regular practice or routine
+Happy: Feeling or showing pleasure or contentment
+Idea: A thought or suggestion as to a possible course of action
+Journey: The act of traveling from one place to another
+Kind: Having or showing a friendly nature
+Laugh: To make sounds expressing amusement
+Magic: The power of apparently influencing events using mysterious forces
+Nature: The phenomena of the physical world collectively
+Open: Allowing access, passage, or a view through an empty space
+Peace: Freedom from disturbance; tranquility
+Quick: Moving fast or doing something in a short time
+Respect: A feeling of deep admiration
+Safe: Protected from or not exposed to danger or risk
+Slice: A thin, broad piece of food cut from a larger portion
+Strong: Having great physical power
+Travel: To make a journey
+Unique: Being the only one of its kind
+Victory: Success in a struggle or endeavor
+Wise: Having experience, knowledge, and good judgment
+Young: Having lived or existed for only a short time
+Zeal: Great energy or enthusiasm in pursuit of a cause
