@@ -1,61 +1,61 @@
-Abandon: To leave behind or give up completely
-Ability: The power or skill to do something
-Absorb: To take in or soak up
-Accept: To receive or agree to something offered
-Access: A means of entering or approaching
-Accurate: Free from error; correct
-Achieve: To successfully reach a goal or result
-Active: Engaging or ready to engage in physical or energetic pursuits.
-Adapt: To adjust to new conditions
-Admire: To regard with respect or warm approval
-Adventure: An unusual and exciting experience
-Aggressive: Ready to attack or confront
-Align: To arrange in a straight line or correct relative positions
-Amazing: Causing great surprise or wonder
-Ambition: A strong desire to achieve something
-Analyze: Examine methodically for understanding
-Ancient: Belonging to the distant past
-Anger: A strong feeling of annoyance or hostility
-Approach: Come near or nearer to something
-Artless: Straightforward and without deception
-Balance: An even distribution of weight enabling someone or something to remain upright
-Beautiful: Pleasing to the senses or mind
-Benefit: An advantage or profit gained
-Bloom: To produce flowers
-Bold: Showing willingness to take risks
-Brave: Showing courage and facing danger
-Calculate: To determine something mathematically
-Careful: Making sure of avoiding potential danger or harm
-Create: To bring something into existence
-Curious: Eager to know or learn something
-Damage: Physical harm caused to something
-Definite: Certain and clearly defined
-Dream: A series of thoughts, images, or emotions during sleep
-Eager: Strongly wanting to do or have something
-Easy: Achieved without great effort
-Fabric: Material typically produced by weaving or knitting
-Famous: Known by many people
-Fast: Moving at high speed
-Gather: To collect things together
-Gift: A thing given willingly to someone without payment
-Habit: A regular practice or routine
-Happy: Feeling or showing pleasure or contentment
-Idea: A thought or suggestion as to a possible course of action
-Journey: The act of traveling from one place to another
-Kind: Having or showing a friendly nature
-Laugh: To make sounds expressing amusement
-Magic: The power of apparently influencing events using mysterious forces
-Nature: The phenomena of the physical world collectively
-Open: Allowing access, passage, or a view through an empty space
-Peace: Freedom from disturbance; tranquility
-Quick: Moving fast or doing something in a short time
-Respect: A feeling of deep admiration
-Safe: Protected from or not exposed to danger or risk
-Slice: A thin, broad piece of food cut from a larger portion
-Strong: Having great physical power
-Travel: To make a journey
-Unique: Being the only one of its kind
-Victory: Success in a struggle or endeavor
-Wise: Having experience, knowledge, and good judgment
-Young: Having lived or existed for only a short time
-Zeal: Great energy or enthusiasm in pursuit of a cause
+Abandon: To leave behind or give up completely: give up, surrender
+Ability: The power or skill to do something: talent, expertise
+Absorb: To take in or soak up: occupy, engage
+Accept: To receive or agree to something offered: acknowledege, admit
+Access: A means of entering or approaching: admittance, entrance
+Accurate: Free from error: correct, exact
+Achieve: To successfully reach a goal or result: attain, accomplish
+Active: Engaging or ready to engage in physical or energetic pursuits: working, dynamic
+Adapt: To adjust to new conditions: modify, alter
+Admire: To regard with respect or warm approval: appreciate, respect
+Adventure: An unusual and exciting experience: ventures, fortunes
+Aggressive: Ready to attack or confront: belligerent, hostile
+Align: To arrange in a straight line or correct relative positions: order, line up
+Amazing: Causing great surprise or wonder: awesome, incredible
+Ambition: A strong desire to achieve something: goal, dream
+Analyze: Examine methodically for understanding: investigate, inspect
+Ancient: Belonging to the distant past: antique, old-fashioned
+Anger: A strong feeling of annoyance or hostility: rage, irritate
+Approach: Come near or nearer to something: approximate
+Artless: Straightforward and without deception: simple, ingenuous, natural
+Balance: An even distribution of weight enabling someone or something to remain upright: reminder, equalize
+Beautiful: Pleasing to the senses or mind: attractive, gorgeous, charming
+Benefit: An advantage or profit gained : aids
+Bloom: To produce flowers: blossom, flourish
+Bold: Showing willingness to take risks: daring, courageous
+Brave: Showing courage and facing danger: bold, fearless
+Calculate: To determine something mathematically: compute, estimate, count
+Careful: Making sure of avoiding potential danger or harm: protective, diligent
+Create: To bring something into existence: produce, make, estbalish
+Curious: Eager to know or learn something: peculiar, bizarre
+Damage: Physical harm caused to something: smash, injure
+Definite: Certain and clearly defined:unequivocal, sure 
+Dream: A series of thoughts, images, or emotions during sleep: vision, fantasy, illusion
+Eager: Strongly wanting to do or have something: keen, passionate
+Easy: Achieved without great effort: comfortable, simple, straightforward
+Fabric: Material typically produced by weaving or knitting: cloth, textile
+Famous: Known by many people: well-known, notable
+Fast: Moving at high speed: rapid, quick
+Gather: To collect things together: assemble, amass
+Gift: A thing given willingly to someone without payment: present
+Habit: A regular practice: routine, wont
+Happy: Feeling or showing pleasure or contentment: glad, joyful, delighted
+Idea: A thought or suggestion as to a possible course of action: view, concept, notion
+Journey: The act of traveling from one place to another: trip, tour
+Kind: Having or showing a friendly nature: compassionate
+Laugh: To make sounds expressing amusement: giggle, chuckle
+Magic: The power of apparently influencing events using mysterious forces: wizardry, witchcraft
+Nature: The phenomena of the physical world collectively: temperament, essence
+Open: Allowing access, passage, or a view through an empty space: free, clear
+Peace: Freedom from disturbance; tranquility: quiet, calmness
+Quick: Moving fast or doing something in a short time: speedy, rapid, swift
+Respect: A feeling of deep admiration: honor, esteem
+Safe: Protected from or not exposed to danger or risk: secure, harmless
+Slice: A thin, broad piece of food cut from a larger portion: portion, slit
+Strong: Having great physical power: iron-like, tough 
+Travel: To make a journey: trip, walk, tour
+Unique: Being the only one of its kind: unusual, extraordinary, special
+Victory: Success in a struggle or endeavor: conquest, achievement, win
+Wise: Having experience, knowledge, and good judgment: sensible, smart, judicious
+Young: Having lived or existed for only a short time: youth, junior
+Zeal: Great energy or enthusiasm in pursuit of a cause: passion, eagerness, enthusiasm 
