@@ -50,6 +50,7 @@ int main()
     l.insertion(20);
     l.insertion(30);
     l.insertion(40);
+    l.insertion(50);
     l.display();
     l.reverse();
     l.display();

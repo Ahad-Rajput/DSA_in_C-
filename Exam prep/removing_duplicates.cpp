@@ -8,77 +8,82 @@ struct node{
 
 class linked_list{
     public:
-        node* head ;
+        node* head = new node;
         linked_list(){
             head = NULL;
         }
-        void insert_at_end(int data){
-            node* new_node = new node;
-            new_node->data = data;
-            new_node->next = NULL;
-            if(head == NULL){
+        void insertion(int data){
+            node* curr = head;
+            if (head == NULL)
+            {
+                node* new_node = new node;
+                new_node->data = data;
+                new_node->next = NULL;
                 head = new_node;
             }
-            else{
-                node* curr = head;
+            else
+            {
                 while (curr->next != NULL)
                 {
                     curr = curr->next;
                 }
+                node* new_node = new node;
+                new_node->data = data;
+                new_node->next = NULL;
                 curr->next = new_node;
             }
+            
         }
-        void display(){
+        void display()
+        {
             node* curr = head;
             while (curr != NULL)
             {
                 cout << curr->data << " -> ";
                 curr = curr->next;
             }
-            cout << "NULL";
-            cout << endl;
+            cout << "NULL\n";
         }
-        void removing_duplicates(){
-            node* current = head ;
-            while (current != NULL)
+        void duplicate_removing(){
+            node* curr = head;
+            while (curr != NULL)
             {
-                node* runner = current;
+                node* runner = curr;
                 while (runner->next != NULL)
                 {
-                    if (runner->next->data == current->data)
+                    if (runner->next->data == curr->data)
                     {
                         node* temp = runner->next;
                         runner->next = runner->next->next;
                         temp->next = NULL;
                         delete temp;
                     }
-                    else{
+                    else
+                    {
                         runner = runner->next;
                     }
+                    
                 }
-                current = current->next;
-            }  
+                curr = curr->next;
+            }
+            
         }
-       
 };
+
 
 int main()
 {
-    linked_list l1, l2;
-    l1.insert_at_end(2);
-    l1.insert_at_end(6);
-    l1.insert_at_end(8);
-    l1.insert_at_end(12);
-    l1.insert_at_end(6);
-    l1.insert_at_end(20);
-    l1.insert_at_end(2);
-
-    l1.display();
-
-    l1.removing_duplicates();
-    
-    l1.display(); 
-
+    linked_list l;
+    l.insertion(3);
+    l.insertion(5);
+    l.insertion(7);
+    l.insertion(3);
+    l.insertion(2);
+    l.insertion(6);
+    l.insertion(7);
+    l.display();
+    l.duplicate_removing();
+    l.display();
     cout << "Everything is fine!\n";
     return 0;
 }
