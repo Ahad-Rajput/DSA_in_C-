@@ -116,13 +116,13 @@ struct linked_list{
 
 int main()
 {
-    // linked_list l;
-    // l.insert_at_start(9);
-    // l.insert_at_start(7);
-    // l.insert_at_start(20);
-    // l.insert_at_start(5);
-    // l.insert_at_start(112);
-    // l.display();
+    linked_list l;
+    l.insert_at_start(9);
+    l.insert_at_start(7);
+    l.insert_at_start(20);
+    l.insert_at_start(5);
+    l.insert_at_start(112);
+    l.display();
     linked_list o;
     o.insert_at_end(10);
     o.insert_at_end(20);
@@ -130,14 +130,14 @@ int main()
     o.insert_at_end(40);
     o.insert_at_end(60);
     // o.display();
-    o.insert_in_the_middle(50, 40);
-    o.display();
-    o.delete_at_start();
-    o.display();
-    o.delete_at_end();
-    o.display();
-    o.delete_in_the_middle(30);
-    o.display();
+    // o.insert_in_the_middle(50, 40);
+    // o.display();
+    // o.delete_at_start();
+    // o.display();
+    // o.delete_at_end();
+    // o.display();
+    // o.delete_in_the_middle(30);
+    // o.display();
     cout << "Everything is fine!\n";
     return 0;
 }
