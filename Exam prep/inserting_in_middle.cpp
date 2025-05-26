@@ -62,7 +62,7 @@ int main()
     l.insert(9);
     l.display();
     l.insert_in_the_middle(0,6);
-    l.insert_in_the_middle(10,9);
+    l.insert_in_the_middle(1-+0,9);
     l.display();
     cout << "Everything is fine!\n";
     return 0;
